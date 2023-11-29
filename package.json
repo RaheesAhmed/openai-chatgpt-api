@@ -1,0 +1,20 @@
+{
+  "name": "chatgpt-api",
+  "version": "1.0.0",
+  "description": "Custom chatGPT api for making api calls to chatgpt.it support both ChatGPt 3.5 and GPT4.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "rahees ahmed",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "nodemon": "^3.0.1",
+    "openai": "^4.20.1",
+    "stream": "^0.0.2"
+  },
+  "type": "module"
+}
