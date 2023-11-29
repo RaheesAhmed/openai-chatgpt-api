@@ -1,12 +1,12 @@
-# OpenAI Express Server Integration
+# OpenAI ChatGPT-4 Integration using Nodejs and expressjs
 
-This project demonstrates how to integrate OpenAI's GPT-3.5 model with an Express server to create and manage conversations.
+This project demonstrates how to integrate OpenAI's GPT-3.5 and GPT-4 model with an Express server to create and manage conversations.
 
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-### Prerequisites
+## Prerequisites
 
 What things you need to install the software and how to install them:
 
@@ -14,19 +14,19 @@ What things you need to install the software and how to install them:
 - npm (Node Package Manager)
 - OpenAI API Key
 
-### Installing
+## Installing
 
 A step-by-step series of examples that tell you how to get a development environment running:
 
-1. **Clone the Repository**:
+1. Clone the Repository:
 
    ```bash
    git clone https://github.com/RaheesAhmed/openai-chatgpt-api.git
-   cd your-repository-directory
+   cd openai-chatgpt-api
 
    ```
 
-2. **Install Dependencies:**
+2. Install Dependencies:
    Make sure you have installed all necessary dependencies by using this command in your terminal or command prompt:
 
 ```
@@ -34,12 +34,13 @@ npm install
 
 ```
 
-**Setting Up OpenAI API Key:**
+## Setting Up OpenAI API Key:
 
 Obtain an API key from OpenAI.
 You will use this key with the /setKey endpoint to initialize the OpenAI client.
 
-Usage
+## Usage
+
 Start the Server:
 
 ```
@@ -47,9 +48,9 @@ npm start
 
 ```
 
-**Set OpenAI API Key**:
+## Set OpenAI API Key:
 
-Make a **POST** request to /setKey with the API key in the body:
+Make a POST request to /setKey with the API key in the body:
 json
 
 ```
@@ -59,9 +60,9 @@ json
 
 ```
 
-**Start a Conversation:**
+## Start a Conversation:
 
-Make a **POST** request to _/conversation_ with the required details:
+Make a POST request to _/conversation_ with the required details:
 json
 
 ```
@@ -73,7 +74,7 @@ json
 
 ```
 
-You will get the full response object
+## You will get the full response object
 
 ```
 {
@@ -126,23 +127,28 @@ You will get the full response object
 
 ```
 
-_Get Response by RunId:_
+## Get Response by RunId:
 
 Make a GET request to _/getResponse/:runId_ to retrieve the response from the conversation.
 
-**index.js file details:**
+## index.js file details:
+
 this files contains the code for each end point seperatly so you can get more control over openai new features.
 
-**Built With**
+## Built With
+
 Nodejs
 Express - The web framework used
 OpenAI - OpenAI API for AI-powered conversations
 
-**Developer by**
+## Developer by
+
 Rahees Ahmed
 
-**License**
+## License
+
 This project is licensed under the MIT License - see the LICENSE.md file for details
 
-**Acknowledgments**
+## Acknowledgments
+
 Thank you _OpenAI_ team for providing the best GPT-4 API.
