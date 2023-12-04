@@ -4,7 +4,7 @@
   "description": "Custom chatGPT api for making api calls to chatgpt.it support both ChatGPt 3.5 and GPT4.",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon app.js"
   },
   "author": "rahees ahmed",
   "license": "MIT",

@@ -9,7 +9,7 @@ app.use(bodyParser.json());
 
 let currentThread;
 let assistantId;
-// app.use(CORS);
+app.use(CORS);
 
 app.get("/", (req, res) => {
   res.send("Welcome to Custom ChatGPT...!");
@@ -97,7 +97,7 @@ app.get("/getResponse/:runId", async (req, res) => {
   }
 });
 
-const PORT = 3000 || process.env.PORT;
+const PORT = 5000 || process.env.PORT;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
